@@ -12,7 +12,7 @@ import theme from 'themes/global_theme';
 
 class AppContainer extends Component {
   componentWillMount() {
-    appSetup();
+    // appSetup();
   }
   componentDidMount() {
     // loadingComplete();
