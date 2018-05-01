@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { appSetup } from './appSetup';
+// import { appSetup } from './appSetup';
 // import { loadingComplete } from 'helpers/'
 
 import App from './App';
