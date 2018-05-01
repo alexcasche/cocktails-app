@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/alexcasche/cocktails-app/issues"
   },
-  "homepage": "https://alexcasche.github.io/cocktails-app",
+  "homepage": "https://alexcasche.github.io/cocktails-app/",
   "dependencies": {
     "gh-pages": "^1.1.0"
   }
