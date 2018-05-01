@@ -1,0 +1,23 @@
+{
+  "name": "pourguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "prepublish": "cd frontend npm run build",
+    "publish": "gh-pages -d frontend/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcasche/cocktails-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexcasche/cocktails-app/issues"
+  },
+  "homepage": "https://github.com/alexcasche/cocktails-app#readme",
+  "dependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
