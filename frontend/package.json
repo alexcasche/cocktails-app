@@ -36,10 +36,12 @@
     "deploy": "aws s3 sync build/ s3://pourguide.com",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sass": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
+    "sass": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "publish": "gh-pages -d frontend/build"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "gh-pages": "^1.1.0",
     "nodemon": "^1.17.3"
   }
 }
