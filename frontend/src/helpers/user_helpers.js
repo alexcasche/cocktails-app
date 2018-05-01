@@ -5,14 +5,15 @@ const API_URL = process.env.REACT_APP_API_URL;
 
 export async function getAppUser() {
   const authUser = await getAuthUser();
-  if (authUser) {
-    let mongoUser = await getMongoUser(authUser);
-    mongoUser
-      ? mongoUser = await matchUserProfiles(authUser, mongoUser)
-      : mongoUser = await createMongoUser(authUser)
-    return mongoUser;
-  }
-  return null;
+  // if (authUser) {
+  //   let mongoUser = await getMongoUser(authUser);
+  //   mongoUser
+  //     ? mongoUser = await matchUserProfiles(authUser, mongoUser)
+  //     : mongoUser = await createMongoUser(authUser)
+  //   return mongoUser;
+  // }
+  // return null;
+  return authUser;
 }
 
 export function getAuthUser() {
