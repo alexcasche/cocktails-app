@@ -1,0 +1,33 @@
+{
+  "name": "pourguide-backend",
+  "version": "0.0.0",
+  "description": "Restful API for PourGuide",
+  "main": "server.js",
+  "repository": "",
+  "author": "Alex Asche",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "express-jwt-authz": "^1.0.0",
+    "express-subdomain": "^1.0.5",
+    "jwks-rsa": "^1.2.1",
+    "mongoose": "^5.0.17",
+    "mongoose-unique-validator": "^2.0.1",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.1.1",
+    "mockgoose": "^7.3.5",
+    "nodemon": "^1.17.3"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "test": "NODE_ENV=test nodemon --exec mocha --timeout 10000 || true"
+  }
+}

@@ -1,0 +1,11 @@
+/*  APP ACTIONS  */
+export const SET_ENV = 'SET_ENV';
+export const STORE_ROUTE = 'STORE_ROUTE';
+export const CREATE_AUTHLOCK = 'CREATE_AUTHLOCK';
+export const DELETE_AUTHLOCK = "DELETE_AUTHLOCK";
+export const OPEN_MODAL = 'OPEN_MODAL';
+export const CLOSE_MODAL = 'CLOSE_MODAL';
+
+/*  USER ACTIONS  */
+export const STORE_USER_PROFILE = 'STORE_USER_PROFILE';
+export const CLEAR_USER_PROFILE = 'CLEAR_USER_PROFILE';

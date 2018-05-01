@@ -1,0 +1,160 @@
+/*******  Breakpoints  *******/
+/*******  Colors  *******/
+.orange {
+  background-color: #FFBE2F; }
+
+.turquoise {
+  background-color: #4BADD1; }
+
+/*******  Fonts  *******/
+/*******  Helpers  *******/
+@media screen and (min-width: 600px) {
+  .mobile_only {
+    display: none; } }
+
+/*******  Transitions  *******/
+.fade_link {
+  opacity: 1;
+  transition: opacity .25s ease-in-out; }
+  .fade_link:hover {
+    opacity: .5;
+    cursor: pointer;
+    text-decoration: none; }
+
+/*******  Elements  *******/
+.field_element {
+  display: block;
+  position: relative;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize; }
+  .field_element.select:after {
+    content: '\f0dd';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    transform: translateY(-50%);
+    pointer-events: none; }
+  .field_element select,
+  .field_element input,
+  .field_element textarea {
+    width: 100%;
+    padding: 8px 10px;
+    background-color: inherit;
+    color: inherit;
+    font: inherit;
+    text-transform: inherit; }
+
+.dropdown_container .dropdown {
+  position: relative;
+  display: none;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize; }
+  .dropdown_container .dropdown .dropdown_content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.05); }
+    .dropdown_container .dropdown .dropdown_content li {
+      padding: 8px 10px;
+      background-color: #fafafa; }
+      .dropdown_container .dropdown .dropdown_content li:hover {
+        background-color: #ddd; }
+  .dropdown_container .dropdown > span {
+    display: block;
+    position: relative;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 8px 10px;
+    pointer-events: none; }
+    .dropdown_container .dropdown > span span:after {
+      content: '\f0d7';
+      font-family: FontAwesome;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%); }
+  .dropdown_container .dropdown:hover {
+    cursor: pointer; }
+  .dropdown_container .dropdown.active .dropdown_content {
+    display: block; }
+
+@media screen and (min-width: 900px) {
+  .dropdown_container .select {
+    display: none; }
+  .dropdown_container .dropdown {
+    display: block; } }
+
+.auth0-lock-header-logo {
+  height: 46px !important; }
+
+@media (min-width: 481px) {
+  .auth0-lock-opened {
+    min-height: 450px !important;
+    top: 0 !important;
+    bottom: unset !important; }
+  .auth0-lock-widget {
+    position: relative;
+    background-color: white !important;
+    padding: 4px !important;
+    box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.5) !important;
+    max-height: none !important; }
+  .auth0-lock-header-bg {
+    background: linear-gradient(to bottom, #181a34 0%, #313234 100%) !important; }
+  .auth0-lock-header-bg-blur {
+    opacity: .1 !important; }
+  .auth0-lock-close-button {
+    padding: 4px !important;
+    top: 4px !important;
+    right: 4px !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: white !important;
+    border: none !important;
+    border-radius: 0 0 0 4px !important; }
+    .auth0-lock-close-button:hover {
+      box-shadow: inset 0 0 100px 20px rgba(0, 0, 0, 0.2); }
+    .auth0-lock-close-button::after {
+      color: #FFBE2F;
+      font-family: FontAwesome;
+      font-size: 18px;
+      content: '\f00d';
+      position: relative;
+      top: 9px;
+      left: 4px; }
+    .auth0-lock-close-button svg {
+      display: none !important; }
+  .auth0-lock.auth0-lock .auth0-lock-tabs li a {
+    font-size: 0;
+    color: transparent !important;
+    text-transform: uppercase; }
+    .auth0-lock.auth0-lock .auth0-lock-tabs li a::before {
+      color: #2E2F34;
+      font-size: 13px; }
+  .auth0-lock.auth0-lock .auth0-lock-tabs li:first-child a::before {
+    content: "Login"; }
+  .auth0-lock.auth0-lock .auth0-lock-tabs li:last-child a::before {
+    content: "Sign up"; }
+  .auth0-lock-submit {
+    height: 60px !important;
+    background-color: #FFBE2F !important;
+    text-align: center !important; }
+    .auth0-lock-submit svg {
+      display: none !important; }
+    .auth0-lock-submit::after {
+      content: "SUBMIT";
+      font-weight: 600; }
+  .auth0-lock-badge-bottom {
+    display: none !important; } }
